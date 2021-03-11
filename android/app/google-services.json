@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909299185000",
+    "project_id": "loja-virtual-pro-e81f0",
+    "storage_bucket": "loja-virtual-pro-e81f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909299185000:android:f8c569e10cf1971ae292dd",
+        "android_client_info": {
+          "package_name": "br.com.redrodrigo.loja_virtual_pro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909299185000-a6jak54qc6thkc65odqhg84hhf1701aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD74NF2DvjoZbre_zBOIkLsjA4IBTt24UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909299185000-a6jak54qc6thkc65odqhg84hhf1701aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
