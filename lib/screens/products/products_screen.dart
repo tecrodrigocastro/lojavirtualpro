@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loja_virtual_pro/common/custom_drawer/custom_drawer.dart';
 import 'package:loja_virtual_pro/models/product_manager.dart';
+import 'package:loja_virtual_pro/screens/products/components/product_list_tile.dart';
 import 'package:provider/provider.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -13,15 +14,14 @@ class ProductsScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Consumer<ProductManager>(
-        builder: (_,productManager,__){
+        builder: (_, productManager, __) {
           return ListView.builder(
-            itemCount: productManager.allProducts.length ,
-            itemBuilder: (_, index) {
-              return ListTile(
-                title: Text(productManager.allProducts[index].name),
-              );
-            });
-        } ,
+              padding: const EdgeInsets.all(4),
+              itemCount: productManager.allProducts.length,
+              itemBuilder: (_, index) {
+                return ProductListTile(productManager.allProducts[index]);
+              });
+        },
       ),
     );
   }
