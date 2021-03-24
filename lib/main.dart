@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loja_virtual_pro/models/cart_manager.dart';
 import 'package:loja_virtual_pro/models/product.dart';
 import 'package:loja_virtual_pro/models/product_manager.dart';
 import 'package:loja_virtual_pro/models/user_manager.dart';
@@ -26,6 +27,10 @@ class MyApp extends StatelessWidget {
           create: (_) => ProductManager(),
           lazy: false,
         ),
+        Provider(
+          create: (_) => CartManager(),
+          lazy: false,
+        ),
       ],
       child: MaterialApp(
         title: 'Loja do Rodrigo',
@@ -43,10 +48,9 @@ class MyApp extends StatelessWidget {
           switch (settings.name) {
             case '/login':
               return MaterialPageRoute(builder: (_) => LoginScreen());
-              case '/product':
-              return MaterialPageRoute(builder: (_) => ProductScreen(
-                settings.arguments as Product
-              ));
+            case '/product':
+              return MaterialPageRoute(
+                  builder: (_) => ProductScreen(settings.arguments as Product));
             case '/signup':
               return MaterialPageRoute(builder: (_) => SignUpScreen());
             case '/base':
