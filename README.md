@@ -1,6 +1,6 @@
 # loja_virtual_pro
 
-A new Flutter project.
+Projeto para desenvolvimento de um app para lojas.
 
 ## Getting Started
 
